@@ -4,10 +4,9 @@ class String
     arr = self.split('')
     new_arr = []
     arr.length.times do
-      final_char = arr.pop
-      new_arr << final_char
+      new_arr << arr.pop
     end
-    return new_arr.join
+    new_arr.join
   end
 end
 
@@ -16,8 +15,7 @@ class Array
   def my_reverse
     new_arr = []
     self.length.times do
-      final_char = self.pop
-      new_arr << final_char
+      new_arr << self.pop
     end
     new_arr
   end

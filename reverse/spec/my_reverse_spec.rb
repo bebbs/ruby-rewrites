@@ -13,3 +13,12 @@ describe String do
   # structures without opening and extending each class?
 
 end
+
+describe Array do
+
+  it 'should be able to reverse an array' do
+    expect([1,2,3].reverse).to eq [3,2,1]
+    expect([1,2,3].my_reverse).to eq [3,2,1]
+  end
+
+end
